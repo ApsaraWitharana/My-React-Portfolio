@@ -2,27 +2,28 @@ import { motion } from 'framer-motion';
 
 const blogs = [
   {
-    title: "Getting Started with React",
-    description: "Learn the basics of React and how to create your first React application.",
-    date: "June 15, 2023",
-    image: "https://via.placeholder.com/400x250",
+    title: "Getting Started with React Q & A",
+    description: "A beginner-friendly guide covering essential React concepts, including components, state, and props, to help you build your first React application.",
+    date: "Feb 28, 2025",
+    image: "https://files.oaiusercontent.com/file-3C2M8sU2mCva8aj8yaWRLn?se=2025-03-03T09%3A27%3A49Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D200b8091-f85a-4225-a005-79ab54305cbf.webp&sig=4Q6RGdo/CPTcg3gqfnbdAbB8%2BUVR1KB93RQ%2BLyhGWAk%3D",
     link: "#",
   },
   {
-    title: "Mastering Tailwind CSS",
-    description: "Tips and tricks to become proficient with Tailwind CSS framework.",
-    date: "July 22, 2023",
-    image: "https://via.placeholder.com/400x250",
+    title: "Spring Boot Annotation",
+    description: "Explore the core annotations in Spring Boot, their use cases, and how they simplify application development with powerful metadata-driven configurations.",
+    date: "Aug 20, 2024",
+    image: "https://files.oaiusercontent.com/file-11B6FYUN9Hkbg8AMcmxMbJ?se=2025-03-03T09%3A41%3A39Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3De3de101d-873c-4393-9d17-b0b19a8a2749.webp&sig=1wrf0G/h33aUXyS8qhRl5iEltt5XU12i6QRo4GyMIr4%3D",
     link: "#",
   },
   {
-    title: "The Power of Framer Motion",
-    description: "How to create stunning animations in React using Framer Motion.",
-    date: "August 10, 2023",
-    image: "https://via.placeholder.com/400x250",
+    title: "Microservices Architecture And Design Patterns",
+    description: "Understand the principles of microservices architecture and learn key design patterns to build scalable, resilient, and efficient distributed systems.",
+    date: "Feb 5, 2025",
+    image: "https://files.oaiusercontent.com/file-Fry7ExAdYaiAmCM8t8eSby?se=2025-03-03T09%3A28%3A41Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D3903e4f9-8ed6-49fb-8ce6-106e4a9e273c.webp&sig=M9FqdSWD1Bz3EwC4uM0JKSNB1/0Tlls9xkDidMZmfns%3D",
     link: "#",
   },
 ];
+
 
 const BlogCard = ({ index, title, description, date, image, link }) => {
   return (
@@ -71,22 +72,30 @@ const Blogs = () => {
   return (
     <section id="blogs" className="relative w-full min-h-screen">
       <div className="section-container">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <p className="section-subheading">My Articles</p>
-          <h2 className="section-heading">
-            <span className="blue-text-gradient">Blogs</span>
-          </h2>
-        </motion.div>
+        <div className="text-center mb-10">
+          <motion.h2
+              initial={{scale: 0.8}}
+              whileInView={{scale: 1}}
+              transition={{duration: 0.8, ease: "easeOut"}}
+              className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-200 to-blue-500 mb-5"
+          >
+            My Latest Articles
+          </motion.h2>
+          <motion.p
+              initial={{opacity: 0}}
+              whileInView={{opacity: 1}}
+              transition={{delay: 0.2, duration: 0.6}}
+              className="mt-4 text-slate-400 max-w-2xl mx-auto"
+          >
+            Explore my daily articles on Medium, where I share insights, tutorials, and best practices on web and mobile
+            development, Spring Boot,python,react and emerging tech trends.
+          </motion.p>
+
+        </div>
 
         <div className="flex flex-wrap justify-center gap-7">
           {blogs.map((blog, index) => (
-            <BlogCard key={`blog-${index}`} index={index} {...blog} />
+              <BlogCard key={`blog-${index}`} index={index} {...blog} />
           ))}
         </div>
       </div>
