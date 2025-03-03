@@ -47,7 +47,7 @@ const Navbar = ({ scrolled }) => {
             transition={{ duration: 0.5 }}
             className="text-white text-[24px] font-bold cursor-pointer flex"
           >
-            <span className="blue-text-gradient">Portfolio</span>
+            <span className="blue-text-gradient">SA</span>
           </motion.h1>
         </Link>
 
