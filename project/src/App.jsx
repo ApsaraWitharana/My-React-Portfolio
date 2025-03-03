@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import Technologies from './components/Technologies';
 import Projects from './components/Projects';
 import Blogs from './components/Blogs';
 import Certificates from './components/Certificates';
@@ -33,7 +32,6 @@ function App() {
       <div className="relative z-0">
         <Hero />
         <About />
-        <Technologies />
         <Projects />
         <Blogs />
         <Certificates />
