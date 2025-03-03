@@ -47,7 +47,7 @@ const CertificateCard = ({ index, title, issuer, date, image, link, desc }) => {
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-100 text-white px-4 py-2 rounded-full"
+                className="rounded-full bg-gradient-to-r from-blue-700 via-gray-600 to-blue-900 hover:bg-blue-900 px-6 py-3 text-white transition"
             >
               View Certificate
             </a>

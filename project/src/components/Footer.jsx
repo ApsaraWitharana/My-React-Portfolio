@@ -36,9 +36,9 @@ const Footer = () => {
             <div>
               <h3 className="text-white text-lg font-semibold mb-4">Contact</h3>
               <ul className="space-y-2">
-                <li className="text-gray-300">youremail@example.com</li>
-                <li className="text-gray-300">+1 (123) 456-7890</li>
-                <li className="text-gray-300">New York, USA</li>
+                <li className="text-gray-300">asachini095@example.com</li>
+                <li className="text-gray-300">+94 71 362 7595</li>
+                <li className="text-gray-300">Matara,Sri Lanka</li>
               </ul>
             </div>
           </div>
@@ -46,7 +46,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-300">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Sachini Apsara. All rights reserved.
           </p>
         </div>
       </div>
