@@ -34,34 +34,46 @@ const About = () => {
   return (
       <section id="about" className="relative w-full min-h-screen">
         <div className="section-container">
-          <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-          >
-            <p className="section-subheading">Introduction</p>
-            <h2 className="section-heading">About <span className="blue-text-gradient">Me</span></h2>
-          </motion.div>
+          <div className="text-center mb-5">
+            <motion.h2
+                initial={{scale: 0.8}}
+                whileInView={{scale: 1}}
+                transition={{duration: 0.8, ease: "easeOut"}}
+                className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-200 to-blue-500 mb-5"
+            >
+              About Me
+            </motion.h2>
+            <motion.p
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+                transition={{delay: 0.2, duration: 0.6}}
+                className="mt-4 text-slate-400 max-w-2xl mx-auto"
+            >
+              I am a passionate developer with a strong foundation in web and mobile development. I am always eager to learn, grow, and take on new challenges to enhance my skills
+              and contribute to meaningful projects.
+            </motion.p>
+          </div>
+
 
           <div className="flex flex-col md:flex-row items-center gap-10">
             <motion.div
-                initial={{ opacity: 0, x: -100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
+                initial={{opacity: 0, x: -100}}
+                whileInView={{opacity: 1, x: 0}}
+                transition={{duration: 0.8}}
+                viewport={{once: true}}
                 className="w-full md:w-1/2"
             >
-              <h3 className="text-2xl font-semibold mb-4 text-text">Who I Am</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-text bg-gradient-to-r from-gray-400 to-blue-600 bg-clip-text text-transparent">Who I Am</h3>
               <div className="space-y-4 text-textLight">
                 <p>
-                  Hello! I'm Sachini Apsara, a passionate web developer with a focus on creating beautiful, functional, and
+                  Hello! I'm Sachini Apsara, a passionate web developer with a focus on creating beautiful, functional,
+                  and
                   user-friendly websites. I enjoy turning complex problems into simple, elegant solutions.
                 </p>
                 <p>
                   My journey in web development started in 2023, and since then, I've been continuously learning and
-                  improving my skills. I specialize in frontend development, but I'm also comfortable working with backend
+                  improving my skills. I specialize in frontend development, but I'm also comfortable working with
+                  backend
                   technologies.
                 </p>
                 <p>
@@ -74,20 +86,20 @@ const About = () => {
 
             {/* Skills Section */}
             <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
+                initial={{opacity: 0, y: 30}}
+                whileInView={{opacity: 1, y: 0}}
+                transition={{duration: 0.6}}
                 className="grid grid-cols-2 md:grid-cols-4 gap-6"
             >
               {skills.map((skill, index) => (
                   <motion.div
                       key={index}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: index * 0.1 }}
+                      initial={{opacity: 0, y: 20}}
+                      whileInView={{opacity: 1, y: 0}}
+                      transition={{duration: 0.5, delay: index * 0.1}}
                       className="flex flex-col items-center"
                   >
-                    <div className="bg-secondary p-4 rounded-lg mb-2 hover:bg-secondary/80 transition-colors">
+                    <div className="bg-gradient-to-r from-gray-400 to-blue-600 bg-clip-text  bg-secondary p-4 rounded-lg mb-2 hover:bg-secondary/80 transition-colors">
                       {skill.icon}
                     </div>
                     <span className="text-textLight">{skill.name}</span>
@@ -98,16 +110,16 @@ const About = () => {
 
           {/* My Journey Section */}
           <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              initial={{opacity: 0, y: 30}}
+              whileInView={{opacity: 1, y: 0}}
+              transition={{duration: 0.6, delay: 0.4}}
               className="mt-16"
           >
             <h3 className="text-2xl font-semibold mb-4 text-text">My Journey</h3>
             <div className="space-y-8">
               <div className="relative pl-8 border-l-2 border-accent">
                 <div className="absolute w-4 h-4 bg-accent rounded-full -left-[9px] top-1"></div>
-                <h4 className="text-xl font-medium text-text">G.C.E Advanced Level Examination (Maths-2020)</h4>
+                <h4 className="text-xl font-medium text-text bg-gradient-to-r from-gray-400 to-blue-600 bg-clip-text text-transparent">G.C.E Advanced Level Examination (Maths-2020)</h4>
                 <p className="text-accent">2018-2020 - Present</p>
                 <p className="text-textLight mt-2">
                   St.Thomas' Girl's College
@@ -116,7 +128,7 @@ const About = () => {
 
               <div className="relative pl-8 border-l-2 border-accent">
                 <div className="absolute w-4 h-4 bg-accent rounded-full -left-[9px] top-1"></div>
-                <h4 className="text-xl font-medium text-text">Graduate Diploma The Beeline Campus</h4>
+                <h4 className="text-xl font-medium text-text bg-gradient-to-r from-gray-400 to-blue-600 bg-clip-text text-transparent">Graduate Diploma The Beeline Campus</h4>
                 <p className="text-accent">2022 - 2023</p>
                 <p className="text-textLight mt-2">
                   The Beeline English Academy & SDFL
@@ -125,7 +137,7 @@ const About = () => {
 
               <div className="relative pl-8 border-l-2 border-accent">
                 <div className="absolute w-4 h-4 bg-accent rounded-full -left-[9px] top-1"></div>
-                <h4 className="text-xl font-medium text-text">Graduate Diploma in Software Engineering</h4>
+                <h4 className="text-xl font-medium text-text bg-gradient-to-r from-gray-400 to-blue-600 bg-clip-text text-transparent">Graduate Diploma in Software Engineering</h4>
                 <p className="text-accent">2023 - 2025</p>
                 <p className="text-textLight mt-2">
                   Institute of Java Software Engineering
