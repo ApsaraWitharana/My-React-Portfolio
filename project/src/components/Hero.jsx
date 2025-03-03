@@ -35,18 +35,22 @@ const Hero = () => {
               I develop modern, responsive websites and web applications with cutting-edge technologies.
             </p>
             <div className="mt-6 flex gap-4">
-              <a href="../assecc/cv/sachini_apsara_resume.pdf%20%20(5).pdf" className="rounded-full bg-gradient-to-r from-blue-700 via-gray-600 to-blue-900 hover:bg-blue-900 px-6 py-3 text-white transition">
+              <a href="../assecc/cv/my_cv.pdf"
+                 className="rounded-full bg-gradient-to-r from-blue-700 via-gray-600 to-blue-900 hover:bg-blue-900 px-6 py-3 text-white transition">
                 Download CV
               </a>
               <div className="flex gap-4 items-center">
-                <a href="https://github.com/ApsaraWitharana" className="text-white hover:text-blue-100 transition-colors duration-300">
-                  <FaGithub size={24} />
+                <a href="https://github.com/ApsaraWitharana"
+                   className="text-white hover:text-blue-100 transition-colors duration-300">
+                  <FaGithub size={24}/>
                 </a>
-                <a href="https://www.linkedin.com/in/sachini-apsara-840067299/" className="text-white hover:text-blue-100 transition-colors duration-300">
-                  <FaLinkedin size={24} />
+                <a href="https://www.linkedin.com/in/sachini-apsara-840067299/"
+                   className="text-white hover:text-blue-100 transition-colors duration-300">
+                  <FaLinkedin size={24}/>
                 </a>
-                <a href="https://medium.com/@asachini095" className="text-white hover:text-blue-100 transition-colors duration-300">
-                  <FaMedium size={24} />
+                <a href="https://medium.com/@asachini095"
+                   className="text-white hover:text-blue-100 transition-colors duration-300">
+                  <FaMedium size={24}/>
                 </a>
               </div>
             </div>
@@ -54,10 +58,10 @@ const Hero = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="w-full md:w-1/2 flex justify-center items-center"
+            initial={{opacity: 0, x: 100}}
+            animate={{opacity: 1, x: 0}}
+            transition={{duration: 0.8}}
+            className="w-full md:w-1/2 flex justify-center items-center"
         >
           <div className="w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] rounded-full overflow-hidden border-4 border-blue-100 shadow-lg">
             <img 
