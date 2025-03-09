@@ -28,7 +28,7 @@ const projects = [
     category: "Web Development",
     image: 'https://images.unsplash.com/photo-1532622785990-d2c36a76f5a6?auto=format&fit=crop&w=1470&q=80',
     source_code_link: "https://github.com/ApsaraWitharana/MERN-Project-Task-manager.git",
-    live_demo_link: "#",
+    live_demo_link: "#"
   },
   {
     name: "World News Mobile App",
