@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import {FaGithub, FaLinkedin, FaMedium, FaTwitter} from 'react-icons/fa';
 import profilePic from '../assecc/image/aboutmepic.jpg';
+import resume from '../assecc/cv/sachini_apsara_resume.pdf  (8).pdf';
 const Hero = () => {
   return (
     <section id="home" className="relative w-full h-screen mx-auto flex items-center">
@@ -35,7 +36,7 @@ const Hero = () => {
               I develop modern, responsive websites and web applications with cutting-edge technologies.
             </p>
             <div className="mt-6 flex gap-4">
-              <a href="../assecc/cv/my_cv.pdf"
+              <a href={resume}
                  className="rounded-full bg-gradient-to-r from-blue-700 via-gray-600 to-blue-900 hover:bg-blue-900 px-6 py-3 text-white transition">
                 Download CV
               </a>
